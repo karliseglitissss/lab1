@@ -23,8 +23,9 @@
         android:id="@+id/btnChangeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="onBtnChangeTextClick"
         android:text="Click me!"
-        app:layout_constraintTop_toBottomOf="@+id/tvChangeText"
-        tools:layout_editor_absoluteX="160dp" />
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="39dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
