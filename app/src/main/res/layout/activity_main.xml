@@ -11,21 +11,35 @@
         android:id="@+id/tvChangeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="text"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="text - lab1"
+        app:layout_constraintBottom_toTopOf="@+id/btnChangeText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginBottom="16dp"/>
 
     <Button
         android:id="@+id/btnChangeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
         android:onClick="onBtnChangeTextClick"
-        android:text="Click me!"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="39dp" />
+        android:text="Change text"
+        app:layout_constraintTop_toBottomOf="@+id/tvChangeText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btnChangeColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="onBtnChangeColorClick"
+        android:text="Change color"
+        app:layout_constraintTop_toBottomOf="@+id/btnChangeText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

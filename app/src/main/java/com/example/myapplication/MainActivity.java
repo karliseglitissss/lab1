@@ -1,4 +1,5 @@
 package com.example.myapplication;
+import androidx.core.content.ContextCompat;
 
 import android.os.Bundle;
 import android.view.View;
@@ -26,6 +27,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void onBtnChangeTextClick(View view) {
         TextView tvChangeText = findViewById(R.id.tvChangeText);
-        tvChangeText.setText("Hello");
+        tvChangeText.setText("The text has changed");
     }
+
+    public void onBtnChangeColorClick(View view) {
+        TextView tvChangeText = findViewById(R.id.tvChangeText);
+        tvChangeText.setTextColor(ContextCompat.getColor(this, R.color.red));
+    }
+
 }
